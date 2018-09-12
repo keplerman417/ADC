@@ -24,7 +24,7 @@ while (count < run):
         while (num < 16):
                 bin = [int(x) for x in list('{0:04}'.format(int('{0:0b}'.format(num))))]
                 bin.reverse()
-                print "BB Channel " + str(num)
+                print "MUX Channel " + str(num)
                 for i in s_x:
                     GPIO.setup(i, GPIO.OUT)
                     GPIO.output(i, bin[pins.index(i)])
